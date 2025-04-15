@@ -1,8 +1,12 @@
 const repeatString = function(userString, number) {
     let result = '';
 
-    for(let i=0; i<number; i++) {
-        result += userString; 
+    if(number >= 0) {
+        for(let i=0; i<number; i++) {
+            result += userString; 
+        }
+    } else {
+        result = 'ERROR'
     }
 
     return result;
